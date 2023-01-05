@@ -1,0 +1,99 @@
+Part I: Set the Scene 
+
+Completed all work inside the galaxy-far-far-away folder.
+
+1. Created a diretory called death_star and made the following files inside of it: darth_vader.txt, princess_leia.txt,
+storm_trooper.txt 
+
+2. In galaxy-far-far-away made a diretory named tatooine and created the following files in it: luke.txt, ben_kenobi.txt 
+
+3. Inside of tatooine made a diretory called millenium_falcon, and in it created: han_solo.txt, chewbaca.txt
+
+
+Part II:mv - rename
+
+4. Renamed ben_kenobi.txt to obi_wan.txt
+
+
+Part II:cp - copy 
+
+copied storm_trooper.txt from death_star to tatooine
+cp ./storm_trooper.txt ../tatooine
+cp storm_trooper.txt ~/tatooine
+
+Part IV: mv - move
+
+6. Moved luke.txt and obi_wan.txt to the millenium_falcon
+mv ./luke.txt ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine/millenium_falcon
+mv ./obi_wan.txt ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine/millenium_falcon
+
+7. Moved millenium_falcon out of the tatooine and the into the galaxy-far-far-away
+mv ./millenium_falcon/ ~/desktop/git-github-and-terminal/galaxy-far-far-away
+
+8. Moved millenium_falcon into death_star 
+mv ./millenium_falcon/ ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+
+9. Move princess_leia.txt into the millenium_falcon
+mv ./princess_leia.txt ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star/millenium_falcon
+
+Part V: rm - remove 
+
+10. Deleted obi_wan.txt
+ rm obi_wan.txt
+
+
+Part VI: all together 
+
+11. In galaxy-far-far-away, made a diretory called yavin_4
+mkdir yavin_4
+
+12. Moved the millenium_falcon out of the death_star and into yavin_4
+mv ./millenium_falcon/ ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+
+13. Made a directory in yavin_4 called x_wing 
+mkdir x_wing
+
+14. Moved princess_leia.txt to yavin_4 and luke.txt to x_wing 
+mv ./princess_leia.txt ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+mv ./luke.txt ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4/x_wing
+
+15. Moved the millenium_falcon and the x_wing out of yavin_4 and into galaxy-far-far-away
+mv ./millenium_falcon/ ~/desktop/git-github-and-terminal/galaxy-far-far-away
+mv ./x_wing ~/desktop/git-github-and-terminal/galaxy-far-far-away
+
+16. In death_star, create directories for the tie_fighter_1, tie_fighter_2 and tie_fighter_3
+mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+
+17. Moved darth_vader.txt into tie_fighter_1
+mv ./darth_vader.txt ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star/tie_fighter_1
+
+18. Made a copy of the storm_trooper.txt in both tie_fighter_2 and tie_figher_3 
+cp ./storm_trooper.txt ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star/tie_fighter_2
+cp ./storm_trooper.txt ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star/tie_fighter_3
+
+19. Moved all the tie_fighters out of the death_star and into galaxy-far-far-away
+mv ./tie_fighter_1 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+mv ./tie_fighter_2 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+mv ./tie_fighter_3 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+
+Part VII: rm -r:remove directories and everything they contain
+
+20. Remove tie_fighter_2 and tie_fighter_3
+rm -r tie_fighter_2
+rm -r tie_fighter_3
+
+Part VIII
+
+21. Touch a file in x_wing called the_force.txt
+touch the_force.txt
+
+22. Destroy the death_star and anyone inside of it 
+rm -r death_star
+
+23. Return x_wing and the millenium_falcon to yavin_4
+mv ./x_wing ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+mv ./millenium_falcon/ ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4/
+
+
+
+
