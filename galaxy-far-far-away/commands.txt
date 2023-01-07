@@ -18,8 +18,7 @@ Part II:mv - rename
 Part II:cp - copy 
 
 copied storm_trooper.txt from death_star to tatooine
-cp ./storm_trooper.txt ../tatooine
-cp storm_trooper.txt ~/tatooine
+cp storm_trooper.txt ~/galaxy-far-far-away/tatooine
 
 Part IV: mv - move
 
