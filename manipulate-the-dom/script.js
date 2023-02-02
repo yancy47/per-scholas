@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   element.style.fontSize = "2rem";
   });
  
+
   // Part 5
   let pastRaces = document.getElementById("past-races")
   let listItem1 = document.getElementsByTagName("li")[3]
@@ -87,12 +88,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   div.appendChild.h2
   div.appendChild.p
 
+
   // Part 8
   let quoteTitle = document.querySelector("#quote-title")
   quoteTitle.addEventListener('click', function(evt) {
     document.querySelector("#quote-title").innerText = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
     console.log(evt.target)
   });
+
+  
   // Part 9
 
 
