@@ -64,26 +64,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   // Part 7
-  // create a new div and class to it
+  // create a new <div> element and add a new class .blog-post to it 
   let div = document.createElement("div")
   div.classList.add("blog-post")
 
-  // get the parent div element with it's class and append the new div to it 
+  // get the parent div element by its class and append the newly created div to it 
   let div1 = document.querySelector(".main")
   div1.appendChild(div)
   console.dir(div1)
 
-  // create a new h2 element with inner HTML and text content 
+  // create a new <h2> element with inner HTML and text content 
   let h2 = document.createElement("h2")
   h2.innerHTML = "Havana"
   h2.textContent = "Havana"
 
-  // create a new p element with inner HTML and text content 
+  // create a new <p> element with inner HTML and text content 
   let p = document.createElement("p")
   p.innerHTML = "I was literally on fire!"
   p.textContent= "I was literally on fire!"
 
-  // get the newly created div and append h and p to it
+  // get the newly created div and append <h2> and <p> to it
   let blogPost = document.querySelector(".blog-post")
   div.appendChild.h2
   div.appendChild.p
@@ -91,15 +91,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // Part 8
   let quoteTitle = document.querySelector("#quote-title")
-  quoteTitle.addEventListener('click', function(evt) {
-    document.querySelector("#quote-title").innerText = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
-    console.log(evt.target)
-  });
+  quoteTitle.addEventListener('click', randomQuote)
+  console.log(randomQuote)
+  // document.querySelector('#quote-title').addEventListener('click', randomQuote);
 
-  
+
   // Part 9
-
-
+  let blogPosts = document.querySelectorAll(".blog-post")
+  blogPosts.forEach(function(blogPost) { 
+    blogPost.addEventListener('mouseout', function(){
+      blogPost.classList.toggle('purple')
+    })
+      blogPost.addEventListener('mouseenter', function(){
+        blogPost.classList.toggle('red') 
+      })
+    })
 
 
 });
